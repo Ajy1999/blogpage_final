@@ -210,9 +210,9 @@ def logout():
 
 @app.route('/')
 def get_all_posts():
-    result = db.session.execute(db.select(BlogPost))
-    posts = result.scalars().all()
-    return render_template("index.html", all_posts=posts, current_user=current_user)
+   result = db.session.execute(db.select(BlogPost))
+   posts = result.scalars().all()
+   return render_template("index.html", all_posts=posts, current_user=current_user)
 
 
 # Add a POST method to be able to post comments
