@@ -42,8 +42,6 @@ Create a .env file in the root folder with the following:
 -Copy
 -Edit
 ```env
-FLASK_APP=main.py
-FLASK_ENV=development
 SECRET_KEY=your_secret_key
 DATABASE_URL=sqlite:///blog.db  # Or use your PostgreSQL URI
 
